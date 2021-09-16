@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour {
 
 		SetCountText ();
 
-                // Set the text property of the Win Text UI to an empty string, making the 'You Win' (game over message) blank
-                winTextObject.SetActive(false);
+        // Set the text property of the Win Text UI to an empty string, making the 'You Win' (game over message) blank
+        winTextObject.SetActive(false);
 	}
 
 	void FixedUpdate ()
