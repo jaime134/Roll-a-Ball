@@ -55,22 +55,22 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-        void OnMove(InputValue value)
-        {
-        	Vector2 v = value.Get<Vector2>();
+    void OnMove(InputValue value)
+    {
+        Vector2 v = value.Get<Vector2>();
 
-        	movementX = v.x;
-        	movementY = v.y;
-        }
+        movementX = v.x;
+        movementY = v.y;
+    }
 
-        void SetCountText()
+    void SetCountText()
 	{
 		countText.text = "Count: " + count.ToString();
 
 		if (count >= 12) 
 		{
-                    // Set the text value of your 'winText'
-                    winTextObject.SetActive(true);
+            // Set the text value of your 'winText'
+            winTextObject.SetActive(true);
 		}
 	}
 }
